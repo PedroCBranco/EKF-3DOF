@@ -13,7 +13,7 @@ def gerar_relatorio(tempo_passado, historico_realx, historico_realy,
 
     erro_instantaneo = np.sqrt((real_x - previsao_x)**2 + (real_y - previsao_y)**2)
 
-    rmse_total = np.sqrt(np.mean((real_x - previsao_x)**2 + (real_y - previsao_y)**2))
+    rmse_total = np.sqrt(np.mean((real_x - previsao_x)**2 + (real_y - previsao_y)**2)) #root mean squared error
     print(f"\n--- RELATÓRIO DO EKF ---")
     print(f"RMSE Total da Trajetória: {rmse_total:.2f} metros\n")
 
