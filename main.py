@@ -96,7 +96,6 @@ for i in range(300):
     historico_sensory.append(gps_y)
     historico_previsaoy.append(ekf1.x[1, 0])
 
-# Enviar os dados recolhidos para o módulo de gráficos
 gerar_relatorio(tempo_passado, historico_realx, historico_realy, 
                 historico_sensorx, historico_sensory, 
                 historico_previsaox, historico_previsaoy)
